@@ -36,9 +36,9 @@ function numberOfPrime(n) {
   
   for ( var i = 1; i <= n; i++ ) {
     for ( var j = 1; j <= i; j++ ) {
-      if (i % j === 0) countDivisor++;
+      if ( i % j === 0 ) countDivisor++;
     }
-    if (countDivisor === 2) numberPrime ++;
+    if ( countDivisor === 2 ) numberPrime ++;
     countDivisor = 0;
   }
   return numberPrime;
